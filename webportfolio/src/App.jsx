@@ -5,12 +5,10 @@ function App() {
   const [showInfoCard, setShowInfoCard] = useState(false);
 
   useEffect(() => {
-    // Trigger the information card display right after the background color change
     const timer = setTimeout(() => {
-      setShowInfoCard(true); // Show the info card after the background color change
-    }, 3000); // 3 seconds, to match the background color transition time
-
-    return () => clearTimeout(timer); // Clean up the timer
+      setShowInfoCard(true);
+    }, 3000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -28,10 +26,15 @@ function App() {
         </svg>
       </div>
 
-      {/* Show the information card immediately after the background color change */}
       {showInfoCard && (
         <div className="information-card">
-          <h1>Ron Galang</h1>
+          <div className="wrapper">
+            <div className="left-side"></div>
+            <div className="right-side">
+              <h1>justin ron.</h1>
+              <p>Front-end Developer</p>
+            </div>
+          </div>
         </div>
       )}
     </>
