@@ -13,6 +13,20 @@ html {
   font-family: var(--pfont);
 }
 
+body {
+  overflow-x: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; /* Change from scroll to auto */
+}
+
 :root {
   /* Fonts */
   --mainfont: "Orbit", "Poppins", sans-serif;
