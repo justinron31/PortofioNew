@@ -1,0 +1,27 @@
+/* font family */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Orbit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--pfont);
+}
+
+:root {
+  /* Fonts */
+  --mainfont: "Orbit", "Poppins", sans-serif;
+  --title: "Montserrat", "Poppins", sans-serif;
+  --subtitle: "MuseoModerno", "Poppins", sans-serif;
+  --pfont: "Courier New", Courier, monospace;
+
+  /* colors */
+  --primary: #162642;
+  --secondary: #c5d8d2;
+  --bg: #fdefd3;
+}

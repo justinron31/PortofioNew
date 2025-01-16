@@ -1,0 +1,78 @@
+/* The main card container */
+.main-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+  animation: changeBackground 3s forwards;
+}
+
+/* Add animation for the spinning loader */
+.spinning-loader {
+  animation: zoomIn 3s ease-in-out forwards, fadeOut 3s forwards;
+  transform-origin: center;
+  transition: transform 0.5s;
+}
+
+/* Zoom-in animation */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0); /* Start very small */
+  }
+  50% {
+    transform: scale(8); /* Zoom in progressively */
+  }
+  80% {
+    transform: scale(20); /* More intense zoom */
+  }
+  100% {
+    transform: scale(35); /* Final zoom filling most of the screen */
+  }
+}
+
+/* Fade out the SVG and background transition */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Background color change smoothly */
+@keyframes changeBackground {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+/* Information card, initially hidden */
+.information-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* This will center the card */
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  animation: fadeIn 1s forwards;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Ensure smooth fade-in */
+}
+
+/* Fade-in animation for the information card */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
