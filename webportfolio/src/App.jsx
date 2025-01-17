@@ -7,15 +7,18 @@ function App() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowLoader(false); // Hide the loader
-      setShowInfoCard(true); // Show the information card
-    }, 1700); // Matches the duration of the animation
+      setShowLoader(false);
+      setShowInfoCard(true);
+    }, 1700);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
+      {/* scroll Tndicator */}
+      <div className="scroll-indicator"></div>
+
       {/* Spinning loader */}
       {showLoader && (
         <div className="main-card">
@@ -155,6 +158,10 @@ function App() {
               nisi, perspiciatis odio incidunt dolorum illo nulla provident
               fugiat laborum est amet doloremque!
             </p>
+          </section>
+
+          <section id="contactme">
+            <h1>Contact Me</h1>
           </section>
         </section>
       )}

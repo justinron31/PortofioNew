@@ -195,10 +195,41 @@ gap: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem);
     color: var(--light);
 }
 
+/* Section styling */
+section {
+  min-height: 100vh;
+  position: relative;
+}
+
 
 #projects{
     background-color: var(--dark);
-    padding:50px;
-    min-height: 100vh;
-    position: relative;
+
+}
+
+#contactme{
+    background-color: var(--light);
+
+    color:aqua;
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10px;
+  background-color: var(--dark);
+  z-index: 90;
+  transition: width 0.2s ease-out;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher 1s linear;
+  animation-timeline:scroll();
+transition: width 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+@keyframes scroll-watcher{
+  to { scale: 1 1; }
 }
