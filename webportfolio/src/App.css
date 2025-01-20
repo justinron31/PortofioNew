@@ -242,9 +242,8 @@ gap: clamp(0.425rem, 0.5rem + 0.625vw, 1.22rem);
     color: var(--light);
 }
 
-.icon p {
+.icon p , .bottom-icon p {
     font-size: 1rem;
-
     font-family: var(--pfont);
     font-weight: 400;
 
@@ -343,7 +342,7 @@ justify-content: center;
   width: 100%;
   height: auto;
   filter: brightness(1);
-  transition: filter 0.3s ease;
+
 }
 
 
@@ -373,6 +372,20 @@ font-size: clamp(0.9375rem, 0.875rem + 0.3125vw, 1.25rem);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+
+.bottom-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+
+.bottom-contact a{
+ text-decoration: none;
 }
 
 
@@ -420,6 +433,28 @@ flex-wrap: wrap
   border: 2px dotted var(--dark);
   border-radius: 15px;
   text-wrap: nowrap;
+}
+
+
+.bottom-icon{
+    background:var(--dark) ;
+    color: var(--light);
+    padding:10px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.bottom-icon:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background:var(--primary) ;
+    color: var(--dark);
 }
 
 
