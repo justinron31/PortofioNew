@@ -3,7 +3,6 @@ import { useEffect } from "react";
 const useScrollWatcher = () => {
   useEffect(() => {
     const indicator = document.querySelector(".scroll-indicator");
-    // const portfolioButton = document.querySelector(".portfolio-button-wrapper");
 
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
@@ -27,17 +26,6 @@ const useScrollWatcher = () => {
           indicator.style.backgroundColor = "var(--dark)"; // Background for contactme section
         }
       }
-
-      // // Hide or show the portfolio button based on scroll position
-      // if (window.scrollY > 0) {
-      //   // If the user has scrolled down, hide the button
-      //   portfolioButton.style.opacity = "0";
-      //   portfolioButton.style.pointerEvents = "none";
-      // } else {
-      //   // If the user is at the top of the page, show the button
-      //   portfolioButton.style.opacity = "1";
-      //   portfolioButton.style.pointerEvents = "auto";
-      // }
     };
 
     window.addEventListener("scroll", handleScroll);

@@ -1,8 +1,10 @@
-import useScrollWatcher from "../hooks/useScrollWatcher"; // Import the custom hook
+import useScrollWatcher from "../hooks/useScrollWatcher";
 import Me from "../assets/me.jpg";
+import AOS from "aos";
 
 function InfoCard() {
-  useScrollWatcher(); // Call the hook
+  AOS.init();
+  useScrollWatcher();
 
   return (
     <>
@@ -69,22 +71,12 @@ function InfoCard() {
               <a href="mailto:justingalangzxc31@gmail.com">
                 <div className="icon">
                   <i className="bx bxs-envelope"></i>
-                  <p>Contact me</p>
+                  <p>Say Hello!</p>
                   <div className="tooltip slide-down">Let&apos;s Connect</div>
                 </div>
               </a>
             </div>
           </div>
-
-          {/* Career Highlights Section */}
-          {/* <div className="portfolio-button-wrapper">
-          <a href="#projects">
-            <div className="portfolio-button">
-              <i className="bx bxs-down-arrow"></i>
-              <p>My Porfolio</p>
-            </div>
-          </a>
-        </div> */}
         </div>
       </section>
 
@@ -102,45 +94,77 @@ function InfoCard() {
       {/* Contact Me Section */}
       <section id="about-me">
         <div className="section-wrapper">
-          <div className="section-header">
+          <div data-aos="fade-down" className="section-header">
             <h1>About me.</h1>
           </div>
 
           <div className="section-content">
             <div className="intro">
               <a>
-                <div className="avatar">
-                  <img src={Me} alt="Ron Galang" />
-                  <div className="tooltip slide-right">Hallo!</div>
+                <div data-aos="fade-right">
+                  <div className="avatar">
+                    <img src={Me} alt="Ron Galang" />
+                  </div>
                 </div>
               </a>
 
-              <p>
+              <p data-aos="fade-left">
                 Hey there! I’m Justin Ron Galang. You can call me{" "}
-                <span className="highlight-dark">Ron</span>, aspiring
-                <span className="highlight-primary">developer</span>,
-                <span className="highlight-primary">designer</span>, and
-                all-around problem-solver based in Philippines. I love creating
-                user-friendly web experiences that make life easier—whether it’s
-                designing sleek interfaces or building systems that just work.
-                When I’m not geeking out over code, you’ll probably catch me
-                searching on how to center a div.
-                <strong> Let’s create something awesome together!</strong>
+                <span className="highlight-dark">Ron</span>, aspiring{" "}
+                <span className="highlight-primary">web developer</span> and
+                all-around problem-solver based in <strong>Philippines</strong>.
+                I love creating user-friendly web experiences that make life
+                easier—whether it’s designing sleek interfaces or building
+                systems that just work. When I’m not geeking out over code,
+                you’ll probably catch me searching on how to center a div. Let’s
+                create something awesome together!
               </p>
             </div>
+            <div data-aos="flip-up" className="techstack-container">
+              <div className="skills">
+                <h1>Technologies.</h1>
+              </div>
+            </div>
+            <div data-aos="zoom-in" className="techstack">
+              <div className="techstack-item">
+                <p>React</p>
+              </div>
 
-            <div className="skills">
-              <h2>Tech Stack</h2>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>MongoDB</li>
-                <li>Git</li>
-              </ul>
+              <div className="techstack-item">
+                <p>JavaScript</p>
+              </div>
+
+              <div className="techstack-item">
+                <p>TypeScript</p>
+              </div>
+
+              <div className="techstack-item">
+                <p>Node.js</p>
+              </div>
+
+              <div className="techstack-item">
+                <p>PHP</p>
+              </div>
+
+              <div className="techstack-item">
+                <p>Tailwind</p>
+              </div>
+
+              <div className="techstack-item">
+                <p>MySQL</p>
+              </div>
+
+              <div className="techstack-item">
+                <p>MongoDB</p>
+              </div>
+
+              <div className="techstack-item">
+                <p>Figma</p>
+              </div>
+
+              <div className="techstack-item">
+                <p>Adobe Illustrator</p>
+              </div>
             </div>
           </div>
         </div>
