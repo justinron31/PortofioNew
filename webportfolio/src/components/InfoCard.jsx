@@ -1,10 +1,31 @@
 import useScrollWatcher from "../hooks/useScrollWatcher";
 import Me from "../assets/me.jpg";
+import CV from "../assets/files/Resume_Galang_WD.pdf";
 import AOS from "aos";
+import { useState } from "react";
 
 function InfoCard() {
   AOS.init();
   useScrollWatcher();
+
+  const [animateHello, setAnimateHello] = useState(false);
+
+  // Function to handle the "Let's Connect" click
+  const handleConnectClick = (e) => {
+    e.preventDefault(); // Prevent default behavior of the anchor tag
+    const infoSection = document.getElementById("info-section");
+
+    // Scroll to the info section
+    infoSection.scrollIntoView({ behavior: "smooth" });
+
+    // Trigger the animation on "Say Hello!" text
+    setAnimateHello(true);
+
+    // Reset animation class after the animation duration (1 second)
+    setTimeout(() => {
+      setAnimateHello(false);
+    }, 1000); // Duration of the animation
+  };
 
   return (
     <>
@@ -78,10 +99,18 @@ function InfoCard() {
                   </div>
                 </a>
                 <a href="mailto:justingalangzxc31@gmail.com">
-                  <div className="icon">
-                    <i className="bx bxs-envelope"></i>
-                    <p>Say Hello!</p>
-                    <div className="tooltip slide-down">Let&apos;s Connect</div>
+                  <div
+                    className={
+                      animateHello ? "animate__animated animate__swing" : ""
+                    }
+                  >
+                    <div className="icon">
+                      <i className="bx bxs-envelope"></i>
+                      <p>Say Hello!</p>
+                      <div className="tooltip slide-down">
+                        Let&apos;s Connect
+                      </div>
+                    </div>
                   </div>
                 </a>
               </div>
@@ -182,7 +211,14 @@ function InfoCard() {
             </div>
 
             <div data-aos="fade-up" className="bottom-contact">
-              <a href="#info-section">
+              <a href={CV} download>
+                <div className="bottom-icon">
+                  <i className="bx bx-file"></i>
+                  <p>Download CV</p>
+                </div>
+              </a>
+
+              <a href="#info-section" onClick={handleConnectClick}>
                 <div className="bottom-icon">
                   <i className="bx bx-code-alt"></i>
                   <p>Let&apos;s Connect</p>
