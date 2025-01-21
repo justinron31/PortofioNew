@@ -4,27 +4,39 @@ import CV from "../assets/files/Resume_Galang_WD.pdf";
 import AOS from "aos";
 import { useState } from "react";
 
+//icons
+import { MysqlDark } from "./icons/MysqlDark";
+import { ReactDark } from "./icons/ReactDark";
+import { AngularDark } from "./icons/AngularDark";
+import { JavascriptDark } from "./icons/JavascriptDark";
+import { TypescriptDark } from "./icons/TypescriptDark";
+import { NodeDark } from "./icons/NodeDark";
+import { PhpDark } from "./icons/PhpDark";
+import { TailwindDark } from "./icons/TailwindDark";
+import { MongodbDark } from "./icons/MongodbDark";
+import { FigmaDark } from "./icons/FigmaDark";
+import { IllustratorDark } from "./icons/IllustratorDark";
+
 function InfoCard() {
   AOS.init();
   useScrollWatcher();
 
+  //animation connect click
   const [animateHello, setAnimateHello] = useState(false);
 
-  // Function to handle the "Let's Connect" click
   const handleConnectClick = (e) => {
-    e.preventDefault(); // Prevent default behavior of the anchor tag
+    e.preventDefault();
     const infoSection = document.getElementById("info-section");
 
-    // Scroll to the info section
     infoSection.scrollIntoView({ behavior: "smooth" });
 
-    // Trigger the animation on "Say Hello!" text
-    setAnimateHello(true);
-
-    // Reset animation class after the animation duration (1 second)
     setTimeout(() => {
-      setAnimateHello(false);
-    }, 1000); // Duration of the animation
+      setAnimateHello(true);
+
+      setTimeout(() => {
+        setAnimateHello(false);
+      }, 2000);
+    }, 800);
   };
 
   return (
@@ -164,56 +176,90 @@ function InfoCard() {
                 <h1>Technologies.</h1>
               </div>
             </div>
-            <div className="techstack">
-              <div data-aos="zoom-in" className="techstack-item">
-                <p>React</p>
+
+            <div data-aos="zoom-in" className="techstack">
+              <div className="techstack-item ">
+                <p className="techstack-text">React</p>
+                <div className="logo-container">
+                  <ReactDark />
+                </div>
               </div>
 
-              <div data-aos="zoom-in" className="techstack-item">
-                <p>Angular</p>
+              <div className="techstack-item">
+                <p className="techstack-text">Angular</p>
+                <div className="logo-container">
+                  <AngularDark />
+                </div>
               </div>
 
-              <div data-aos="zoom-in" className="techstack-item">
-                <p>JavaScript</p>
+              <div className="techstack-item">
+                <p className="techstack-text">JavaScript</p>
+                <div className="logo-container">
+                  <JavascriptDark />
+                </div>
               </div>
 
-              <div data-aos="zoom-in" className="techstack-item">
-                <p>TypeScript</p>
+              <div d className="techstack-item">
+                <p className="techstack-text">TypeScript</p>
+                <div className="logo-container">
+                  <TypescriptDark />
+                </div>
               </div>
 
-              <div data-aos="zoom-in" className="techstack-item">
-                <p>Node.js</p>
+              <div className="techstack-item">
+                <p className="techstack-text">Node.js</p>
+                <div className="logo-container">
+                  <NodeDark />
+                </div>
               </div>
 
-              <div data-aos="zoom-in" className="techstack-item">
-                <p>PHP</p>
+              <div className="techstack-item">
+                <p className="techstack-text">PHP</p>
+                <div className="logo-container">
+                  <PhpDark />
+                </div>
               </div>
 
-              <div data-aos="zoom-in" className="techstack-item">
-                <p>Tailwind</p>
+              <div className="techstack-item">
+                <p className="techstack-text">Tailwind</p>
+                <div className="logo-container">
+                  <TailwindDark />
+                </div>
               </div>
 
-              <div data-aos="zoom-in" className="techstack-item">
-                <p>MySQL</p>
+              <div className="techstack-item">
+                <p className="techstack-text">MySQL</p>
+                <div className="logo-container">
+                  <MysqlDark />
+                </div>
               </div>
 
-              <div data-aos="zoom-in" className="techstack-item">
-                <p>MongoDB</p>
+              <div className="techstack-item">
+                <p className="techstack-text">MongoDB</p>
+                <div className="logo-container">
+                  <MongodbDark />
+                </div>
               </div>
 
-              <div data-aos="zoom-in" className="techstack-item">
-                <p>Figma</p>
+              <div className="techstack-item">
+                <p className="techstack-text">Figma</p>
+                <div className="logo-container">
+                  <FigmaDark />
+                </div>
               </div>
 
-              <div data-aos="zoom-in" className="techstack-item">
-                <p>Adobe Illustrator</p>
+              <div className="techstack-item">
+                <p className="techstack-text">Adobe Illustrator</p>
+                <div className="logo-container">
+                  <IllustratorDark />
+                </div>
               </div>
             </div>
 
             <div data-aos="fade-up" className="bottom-contact">
               <a href={CV} download>
                 <div className="bottom-icon">
-                  <i className="bx bx-file"></i>
+                  <i className="bx bx-down-arrow-alt"></i>
                   <p>Download CV</p>
                 </div>
               </a>
