@@ -1,6 +1,6 @@
 import useScrollWatcher from "../hooks/useScrollWatcher";
 import Me from "../assets/me.jpg";
-import CV from "../assets/files/Resume_Galang_WD.pdf";
+import CV from "../assets/files/Ron_Galang - Resume_WD.pdf";
 import AOS from "aos";
 import { useState } from "react";
 
@@ -88,7 +88,7 @@ function InfoCard() {
                   <h1 className="animate__animated animate__bounceInLeft">
                     justin ron
                   </h1>
-                  <p className="animate__animated animate__bounceInLeft">
+                  <p className="animate__animated animate__bounceInRight">
                     Web Developer
                   </p>
                   <div className="tooltip slide-right">About me</div>
@@ -97,7 +97,7 @@ function InfoCard() {
             </div>
 
             {/* Contact Section */}
-            <div className="animate__animated animate__backInUp">
+            <div className="animate__animated animate__bounceInUp">
               {" "}
               <div className="contact">
                 <a
@@ -110,7 +110,7 @@ function InfoCard() {
                     <div className="tooltip slide-down">LinkedIn Profile</div>
                   </div>
                 </a>
-                <a href="mailto:justingalangzxc31@gmail.com">
+                <a href="mailto:jrrongalang@gmail.com">
                   <div
                     className={
                       animateHello ? "animate__animated animate__swing" : ""
