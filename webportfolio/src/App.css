@@ -382,7 +382,7 @@ section {
 
 #about-me,
 #info-section {
-  background: url("bg.png");
+  background: url("../public/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -529,6 +529,16 @@ section {
 @media screen and (max-width: 426px) {
   .name-container:hover .tooltip {
     transform: translateX(80px) translateY(10px) rotate(10deg);
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .techstack {
+    gap: 10px;
+  }
+
+  .techstack-item {
+    padding: 5px 10px;
   }
 }
 
