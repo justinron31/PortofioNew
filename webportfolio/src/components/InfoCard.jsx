@@ -16,6 +16,7 @@ import { TailwindDark } from "./icons/TailwindDark";
 import { MongodbDark } from "./icons/MongodbDark";
 import { FigmaDark } from "./icons/FigmaDark";
 import { IllustratorDark } from "./icons/IllustratorDark";
+import ProjectSection from "./ProjectSection";
 
 function InfoCard() {
   AOS.init();
@@ -41,12 +42,12 @@ function InfoCard() {
 
   return (
     <>
+      <div className="scroll-indicator"></div>
       <section
         id="info-section"
         className="information-card"
         style={{ display: "flex" }}
       >
-        <div className="scroll-indicator"></div>
         <div className="wrapper">
           <div className="content">
             <div className="name-logo">
@@ -131,16 +132,8 @@ function InfoCard() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects">
-        <h1>Projects</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-          mollitia excepturi aliquam explicabo quo, aperiam unde obcaecati nisi,
-          perspiciatis odio incidunt dolorum illo nulla provident fugiat laborum
-          est amet doloremque!
-        </p>
-      </section>
+      {/* Project Section */}
+      <ProjectSection />
 
       {/* Contact Me Section */}
       <section id="about-me">
@@ -152,14 +145,23 @@ function InfoCard() {
           <div className="section-content">
             <div className="intro">
               <a>
-                <div data-aos="fade-right">
-                  <div className="avatar">
-                    <img src={Me} alt="Ron Galang" />
-                  </div>
+                <div
+                  className="avatar"
+                  data-aos="fade-right"
+                  data-aos-anchor="#about-me"
+                  data-aos-offset="500"
+                  data-aos-duration="500"
+                >
+                  <img src={Me} alt="Ron Galang" />
                 </div>
               </a>
 
-              <p data-aos="fade-left">
+              <p
+                data-aos="fade-left"
+                data-aos-anchor="#about-me"
+                data-aos-offset="500"
+                data-aos-duration="500"
+              >
                 Hey there! I’m Justin Ron Galang. You can call me{" "}
                 <span className="highlight-dark">Ron</span>, aspiring{" "}
                 <span className="highlight-primary">web developer</span> and
@@ -171,6 +173,23 @@ function InfoCard() {
                 create something awesome together!
               </p>
             </div>
+
+            <div data-aos="fade-down">
+              {" "}
+              <div className="qoutes-container">
+                <span className="qoute-font">&ldquo;</span>
+                <div className="qoutes">
+                  <p>
+                    There&apos;s a seat waiting for you, at the tables you
+                    haven&apos;t seen yet.{" "}
+                  </p>
+
+                  {/* <p className="author">-Mackie</p> */}
+                </div>
+                <span className="qoute-font">&rdquo;</span>
+              </div>
+            </div>
+
             <div data-aos="flip-up" className="techstack-container">
               <div className="skills">
                 <h1>Technologies.</h1>
@@ -256,15 +275,19 @@ function InfoCard() {
               </div>
             </div>
 
-            <div data-aos="fade-up" className="bottom-contact">
-              <a href={CV} download>
+            <div className="bottom-contact">
+              <a data-aos="fade-right" href={CV} download>
                 <div className="bottom-icon">
                   <i className="bx bx-down-arrow-alt"></i>
                   <p>Download CV</p>
                 </div>
               </a>
 
-              <a href="#info-section" onClick={handleConnectClick}>
+              <a
+                data-aos="fade-left"
+                href="#info-section"
+                onClick={handleConnectClick}
+              >
                 <div className="bottom-icon">
                   <i className="bx bx-code-alt"></i>
                   <p>Let&apos;s Connect</p>
