@@ -1,7 +1,8 @@
 import useScrollWatcher from "../hooks/useScrollWatcher";
 import Me from "../assets/me.jpg";
-import CV from "../assets/files/Ron_Galang - Resume_WD.pdf";
+import CV from "../assets/files/Justin Ron Galang - Resume - SE.pdf";
 import AOS from "aos";
+import ProjectSection from "./ProjectSection";
 import { useState } from "react";
 
 //icons
@@ -16,7 +17,9 @@ import { TailwindDark } from "./icons/TailwindDark";
 import { MongodbDark } from "./icons/MongodbDark";
 import { FigmaDark } from "./icons/FigmaDark";
 import { IllustratorDark } from "./icons/IllustratorDark";
-import ProjectSection from "./ProjectSection";
+import { VueDark } from "./icons/VueDark";
+import { NextjsDark } from "./icons/NextjsDark";
+import { SupabaseDark } from "./icons/SupabaseDark";
 
 function InfoCard() {
   AOS.init();
@@ -38,6 +41,15 @@ function InfoCard() {
         setAnimateHello(false);
       }, 2000);
     }, 800);
+  };
+
+  //download cv
+  const handleDownload = (e) => {
+    e.preventDefault();
+    const link = document.createElement("a");
+    link.href = CV;
+    link.download = "Justin Ron Galang - Resume - SE.pdf";
+    link.click();
   };
 
   return (
@@ -90,7 +102,7 @@ function InfoCard() {
                     justin ron
                   </h1>
                   <p className="animate__animated animate__bounceInRight">
-                    Web Developer
+                    Software Engineer
                   </p>
                   <div className="tooltip slide-right">About me</div>
                 </div>
@@ -111,6 +123,18 @@ function InfoCard() {
                     <div className="tooltip slide-down">LinkedIn Profile</div>
                   </div>
                 </a>
+
+                <a
+                  href="https://github.com/justinron31"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="icon">
+                    <i className="bx bxl-github"></i>
+                    <div className="tooltip slide-down">Github Profile</div>
+                  </div>
+                </a>
+
                 <a href="mailto:jrrongalang@gmail.com">
                   <div
                     className={
@@ -119,7 +143,6 @@ function InfoCard() {
                   >
                     <div className="icon">
                       <i className="bx bxs-envelope"></i>
-                      <p>Say Hello!</p>
                       <div className="tooltip slide-down">
                         Let&apos;s Connect
                       </div>
@@ -164,13 +187,20 @@ function InfoCard() {
               >
                 Hey there! I’m Justin Ron Galang. You can call me{" "}
                 <span className="highlight-dark">Ron</span>, aspiring{" "}
-                <span className="highlight-primary">web developer</span> and
+                <span className="highlight-primary">software engineer</span> and
                 all-around problem-solver based in <strong>Philippines</strong>.
                 I love creating user-friendly web experiences that make life
                 easier—whether it’s designing sleek interfaces or building
                 systems that just work. When I’m not geeking out over code,
-                you’ll probably catch me searching on how to center a div. Let’s
-                create something awesome together!
+                you’ll probably catch me searching on how to center a div or{" "}
+                <a
+                  href="https://www.behance.net/justingalang1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="behance">designing UI</span>
+                </a>{" "}
+                . Let’s create something awesome together!
               </p>
             </div>
 
@@ -180,8 +210,10 @@ function InfoCard() {
                 <span className="qoute-font">&ldquo;</span>
                 <div className="qoutes">
                   <p>
-                    There&apos;s a seat waiting for you, at the tables you
-                    haven&apos;t seen yet.{" "}
+                    <i>
+                      There&apos;s a seat waiting for you, at the tables you
+                      haven&apos;t seen yet.{" "}
+                    </i>
                   </p>
 
                   {/* <p className="author">-Mackie</p> */}
@@ -192,83 +224,90 @@ function InfoCard() {
 
             <div data-aos="flip-up" className="techstack-container">
               <div className="skills">
-                <h1>Technologies.</h1>
+                <h1>Working Knowledge.</h1>
               </div>
             </div>
 
             <div data-aos="zoom-in" className="techstack">
               <div className="techstack-item ">
-                <p className="techstack-text">React</p>
                 <div className="logo-container">
                   <ReactDark />
                 </div>
               </div>
 
               <div className="techstack-item">
-                <p className="techstack-text">Angular</p>
                 <div className="logo-container">
                   <AngularDark />
                 </div>
               </div>
 
               <div className="techstack-item">
-                <p className="techstack-text">JavaScript</p>
+                <div className="logo-container">
+                  <VueDark />
+                </div>
+              </div>
+
+              <div className="techstack-item">
+                <div className="logo-container">
+                  <NextjsDark />
+                </div>
+              </div>
+
+              <div className="techstack-item">
                 <div className="logo-container">
                   <JavascriptDark />
                 </div>
               </div>
 
               <div d className="techstack-item">
-                <p className="techstack-text">TypeScript</p>
                 <div className="logo-container">
                   <TypescriptDark />
                 </div>
               </div>
 
               <div className="techstack-item">
-                <p className="techstack-text">Node.js</p>
                 <div className="logo-container">
                   <NodeDark />
                 </div>
               </div>
 
               <div className="techstack-item">
-                <p className="techstack-text">PHP</p>
                 <div className="logo-container">
                   <PhpDark />
                 </div>
               </div>
 
               <div className="techstack-item">
-                <p className="techstack-text">Tailwind</p>
                 <div className="logo-container">
                   <TailwindDark />
                 </div>
               </div>
 
               <div className="techstack-item">
-                <p className="techstack-text">MySQL</p>
                 <div className="logo-container">
                   <MysqlDark />
                 </div>
               </div>
 
               <div className="techstack-item">
-                <p className="techstack-text">MongoDB</p>
                 <div className="logo-container">
                   <MongodbDark />
                 </div>
               </div>
 
               <div className="techstack-item">
-                <p className="techstack-text">Figma</p>
+                <div className="logo-container">
+                  <SupabaseDark />
+                </div>
+              </div>
+
+              <div className="techstack-item">
                 <div className="logo-container">
                   <FigmaDark />
                 </div>
               </div>
 
               <div className="techstack-item">
-                <p className="techstack-text">Adobe Illustrator</p>
                 <div className="logo-container">
                   <IllustratorDark />
                 </div>
@@ -276,7 +315,7 @@ function InfoCard() {
             </div>
 
             <div className="bottom-contact">
-              <a data-aos="fade-right" href={CV} download>
+              <a data-aos="fade-up" onClick={handleDownload} download>
                 <div className="bottom-icon">
                   <i className="bx bx-down-arrow-alt"></i>
                   <p>Download CV</p>
@@ -284,7 +323,7 @@ function InfoCard() {
               </a>
 
               <a
-                data-aos="fade-left"
+                data-aos="fade-up"
                 href="#info-section"
                 onClick={handleConnectClick}
               >

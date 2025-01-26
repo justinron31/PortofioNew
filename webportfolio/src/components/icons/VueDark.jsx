@@ -1,4 +1,4 @@
-export function AngularDark(props) {
+export function VueDark(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,15 +11,15 @@ export function AngularDark(props) {
         <rect width="256" height="256" fill="#162642" rx="60"></rect>
         <path
           fill="#fdefd3"
-          d="M34.25 61.125L127.325 28l95.525 32.612L207.412 183.7L127.325 228l-78.787-43.725z"
+          d="M182 50h36l-90 155.25L38 50h68.85L128 86l20.7-36z"
         ></path>
         <path
           fill="#fdefd3"
-          d="M222.85 60.613L127.325 28v200l80.087-44.3z"
+          d="m38 50l90 155.25L218 50h-36l-54 93.15L73.55 50z"
         ></path>
         <path
-          fill="#162642"
-          d="m127.469 51.375l-58 129l21.644-.438l11.687-29.149h51.875l12.7 29.375l20.637.437zm.143 41.412l19.625 40.982H110.5l17.169-40.982z"
+          fill="#fff"
+          d="M73.55 50L128 143.6L182 50h-33.3L128 86l-21.15-36z"
         ></path>
       </g>
     </svg>
