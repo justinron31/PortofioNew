@@ -5,6 +5,16 @@ html {
   background-position: center;
 }
 
+.notfoundWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
 /* The main card container */
 .main-card {
   position: relative;
@@ -438,13 +448,14 @@ section {
 /* project section */
 
 #projects {
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .project-wrapper {
   border-radius: 15px;
   background-color: var(--dark);
-  padding: 50px;
+  padding: 1.25rem;
+  padding: clamp(1.95rem, 0.875rem + 1.875vw, 3.125rem);
   display: flex;
   flex-direction: column;
 }
@@ -466,12 +477,14 @@ section {
 .project-header p {
   font-family: var(--name);
   letter-spacing: 5px;
+  font-size: 0.6rem;
+  font-size: clamp(0.6rem, 0.52rem + 0.4vw, 1rem);
 }
 
 .project-header h1 {
-  font-size: 80px;
+  font-size: 3.125rem;
+  font-size: clamp(3.125rem, 2.75rem + 1.875vw, 5rem);
   font-family: var(--name);
-  margin-top: -15px;
 }
 
 .project-container {
@@ -498,7 +511,8 @@ section {
   margin-block: 30px;
   font-family: var(--title);
   font-weight: 800;
-  font-size: 30px;
+  font-size: 1.5625rem;
+  font-size: clamp(1.5625rem, 1.5rem + 0.3125vw, 1.875rem);
   line-height: 1;
 }
 
@@ -521,7 +535,6 @@ section {
 .project-block {
   display: flex;
   justify-content: center;
-
   color: var(--light);
   gap: 30px;
 }
@@ -548,10 +561,12 @@ section {
 
 .project-tools {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 30px;
   color: var(--light);
   gap: 10px;
+  text-wrap: nowrap;
 }
 
 .project-tools h1 {
@@ -671,6 +686,100 @@ section {
   }
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--light);
+  border-radius: 15px;
+  color: var(--dark);
+  border: 4px solid var(--dark);
+  animation: bounceInRight 0.5s forwards;
+  height: 90dvh;
+  max-width: 80dvw;
+  background: url("/bg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.modal-header i {
+  font-size: 2rem;
+  color: var(--primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: var(--dark);
+  border-radius: 50%;
+  border: none;
+  margin-inline: 10px;
+}
+
+.modal-header i:hover {
+  transform: scale(1.1);
+}
+
+.modal-header h1 {
+  padding: 5px 10px;
+  background-color: var(--dark);
+  border-radius: 0px 0px 15px 0px;
+  font-family: var(--mainfont);
+  color: var(--light);
+}
+.project-Mwrapper {
+  padding: 10px;
+}
+
+.project-Mheader {
+  font-family: var(--title);
+  padding: 10px;
+  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 1.04rem + 0.8vw, 2rem);
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.project-Mcontent {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.project-Mcontent p {
+  padding: 10px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 /* Mobile View */
 @media screen and (max-width: 768px) {
   .name-container:hover .tooltip {
@@ -696,6 +805,10 @@ section {
   .intro p {
     text-align: center;
   }
+
+  .project-block {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 426px) {
@@ -705,6 +818,28 @@ section {
 
   .qoutes p {
     text-align: center;
+  }
+
+  .project-name {
+    text-align: center;
+  }
+
+  .project-tools {
+    justify-content: center;
+  }
+  .project-date {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .modal-content {
+    height: 100dvh;
+    max-width: 100dvw;
+  }
+
+  .project-Mcontent {
+    margin: 10px;
   }
 }
 

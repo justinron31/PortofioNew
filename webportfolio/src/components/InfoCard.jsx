@@ -17,7 +17,6 @@ import { TailwindDark } from "./icons/TailwindDark";
 import { MongodbDark } from "./icons/MongodbDark";
 import { FigmaDark } from "./icons/FigmaDark";
 import { IllustratorDark } from "./icons/IllustratorDark";
-import { VueDark } from "./icons/VueDark";
 import { NextjsDark } from "./icons/NextjsDark";
 import { SupabaseDark } from "./icons/SupabaseDark";
 
@@ -237,19 +236,13 @@ function InfoCard() {
 
               <div className="techstack-item">
                 <div className="logo-container">
-                  <AngularDark />
-                </div>
-              </div>
-
-              <div className="techstack-item">
-                <div className="logo-container">
-                  <VueDark />
-                </div>
-              </div>
-
-              <div className="techstack-item">
-                <div className="logo-container">
                   <NextjsDark />
+                </div>
+              </div>
+
+              <div className="techstack-item">
+                <div className="logo-container">
+                  <AngularDark />
                 </div>
               </div>
 
