@@ -137,7 +137,7 @@ const QuotesSection = () => {
         <p>
           <i>{!isLoading && quote.quote}</i>
         </p>
-        {quote.author && <p className="author">-{quote.author}</p>}
+        {quote.author && <p className="author">{quote.author}</p>}
       </div>
       <span className="qoute-font">&rdquo;</span>
     </div>

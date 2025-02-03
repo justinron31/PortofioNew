@@ -66,14 +66,12 @@ function ProjectSection() {
                   </div>
                 </div>
 
-                <div
-                  className="project-right"
-                  onClick={toggleModal}
-                  data-aos="fade-left"
-                >
-                  <div className="right-icon">
-                    <i className="bx bxs-left-arrow"></i>
-                  </div>
+                <div className="project-button-container" data-aos="fade-left">
+                  <div className="project-right" onClick={toggleModal}>
+                    <div className="right-icon">
+                      <i className="bx bxs-left-arrow"></i>
+                    </div>
+                  </div>{" "}
                 </div>
               </div>
               <div className="project-tools" data-aos="fade-right">

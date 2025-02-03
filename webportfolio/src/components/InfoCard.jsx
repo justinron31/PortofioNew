@@ -186,7 +186,7 @@ function InfoCard() {
                 data-aos-duration="500"
               >
                 Hey there! I’m Justin Ron Galang. You can call me{" "}
-                <span className="highlight-dark">Ron</span>, aspiring{" "}
+                <span className="highlight-primary">Ron</span>, aspiring{" "}
                 <span className="highlight-primary">software engineer</span> and
                 all-around problem-solver based in <strong>Philippines</strong>.
                 I love creating user-friendly web experiences that make life
