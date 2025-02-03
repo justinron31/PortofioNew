@@ -3,6 +3,7 @@ import Me from "../assets/me.jpg";
 import CV from "../assets/files/Justin Ron Galang - Resume - SE.pdf";
 import AOS from "aos";
 import ProjectSection from "./ProjectSection";
+import QuotesSection from "./QuotesSection";
 import { useState } from "react";
 
 //icons
@@ -205,20 +206,7 @@ function InfoCard() {
 
             <div data-aos="fade-down">
               {" "}
-              <div className="qoutes-container">
-                <span className="qoute-font">&ldquo;</span>
-                <div className="qoutes">
-                  <p>
-                    <i>
-                      There&apos;s a seat waiting for you, at the tables you
-                      haven&apos;t seen yet.{" "}
-                    </i>
-                  </p>
-
-                  {/* <p className="author">-Mackie</p> */}
-                </div>
-                <span className="qoute-font">&rdquo;</span>
-              </div>
+              <QuotesSection />
             </div>
 
             <div data-aos="flip-up" className="techstack-container">
