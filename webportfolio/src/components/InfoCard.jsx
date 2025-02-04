@@ -91,7 +91,7 @@ function InfoCard() {
                         />
                       </g>
                     </svg>
-                    <div className="tooltip">Projects</div>
+                    <div className="tooltip">Experiences</div>
                   </div>
                 </a>
               </div>
@@ -211,7 +211,7 @@ function InfoCard() {
 
             <div data-aos="flip-up" className="techstack-container">
               <div className="skills">
-                <h1>Working Knowledge.</h1>
+                <h1>Working knowledge.</h1>
               </div>
             </div>
 

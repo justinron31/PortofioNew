@@ -134,9 +134,7 @@ const QuotesSection = () => {
     <div className="qoutes-container">
       <span className="qoute-font">&ldquo;</span>
       <div className="qoutes">
-        <p>
-          <i>{!isLoading && quote.quote}</i>
-        </p>
+        <p className="q-content">{!isLoading && quote.quote}</p>
         {quote.author && <p className="author">{quote.author}</p>}
       </div>
       <span className="qoute-font">&rdquo;</span>
