@@ -1,6 +1,7 @@
 import { useDelayedToggle } from "./hooks/useDelayedToggle";
 import Loader from "./components/Loader";
 import InfoCard from "./components/InfoCard";
+
 import "./App.css";
 
 function App() {

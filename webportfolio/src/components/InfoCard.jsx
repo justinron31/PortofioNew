@@ -299,10 +299,10 @@ function InfoCard() {
 
             <div className="bottom-contact">
               <a data-aos="fade-up" onClick={handleDownload} download>
-                <div className="bottom-icon">
+                <button className="bottom-icon">
                   <i className="bx bx-down-arrow-alt"></i>
                   <p>Download CV</p>
-                </div>
+                </button>
               </a>
 
               <a
@@ -310,10 +310,10 @@ function InfoCard() {
                 href="#info-section"
                 onClick={handleConnectClick}
               >
-                <div className="bottom-icon">
+                <button className="bottom-icon">
                   <i className="bx bx-code-alt"></i>
                   <p>Let&apos;s Connect</p>
-                </div>
+                </button>
               </a>
             </div>
           </div>

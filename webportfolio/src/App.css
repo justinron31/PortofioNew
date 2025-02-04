@@ -293,9 +293,9 @@ html {
 }
 
 /* Section styling */
-section {
+/* section {
   min-height: 100vh;
-}
+} */
 
 .section-wrapper {
   display: flex;
@@ -455,6 +455,7 @@ section {
   background-color: var(--dark);
   color: var(--light);
   border-radius: 15px 0 15px 0px;
+  font-weight: 600;
 }
 
 .bottom-contact {
@@ -476,6 +477,10 @@ section {
 }
 
 /* project section */
+
+.project-section {
+  margin-top: 20px;
+}
 
 .project-wrapper {
   border-radius: 15px;
@@ -591,10 +596,9 @@ a:hover .diagonal-arrow {
 }
 
 .project-box {
-  /* border: 1px solid var(--gray); */
   border-radius: 15px;
   padding: 30px;
-  margin-block: 30px;
+  margin-top: 30px;
   position: relative;
 }
 .xp-date {
@@ -643,10 +647,6 @@ a:hover .diagonal-arrow {
   transform: scale(1.05);
 }
 
-.project-button-container {
-  height: 100%;
-}
-
 .project-tools {
   display: flex;
   flex-wrap: wrap;
@@ -674,6 +674,63 @@ a:hover .diagonal-arrow {
   border-radius: 20px;
   font-family: var(--mainfont);
   font-size: 0.8rem;
+}
+
+.project-title {
+  text-transform: capitalize;
+}
+
+.project-subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.small-text {
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-link a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.project-link-button {
+  background: var(--dark);
+  color: var(--light);
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-link-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background: var(--primary);
+  color: var(--dark);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
 }
 
 #about-me,
