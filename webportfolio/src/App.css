@@ -347,33 +347,40 @@ section {
   filter: brightness(1);
 }
 
-.highlight-dark {
-  color: var(--light);
-  padding: 0px 5px;
-  background: var(--dark);
-  border-radius: 5px;
-}
-
 .highlight-primary {
   color: var(--dark);
   padding: 0px 5px;
   background: var(--primary);
   border-radius: 5px;
+  font-weight: 600;
 }
 
 .behance {
   cursor: pointer;
-  padding: 0px 5px;
-  border-radius: 10px;
-  border: 1px solid var(--dark);
+  font-weight: 700;
+  background: linear-gradient(90deg, red, orange, green, blue, indigo, violet);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
-  background-color: var(--dark);
-  color: var(--light);
+  animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .behance:hover {
-  background-color: var(--primary);
-  color: var(--dark);
+  cursor: pointer;
 }
 
 .intro p {
@@ -530,7 +537,6 @@ section {
 
 .project-name {
   font-family: var(--mainfont);
-
   font-size: 1.5625rem;
   font-size: clamp(1.5625rem, 1.5rem + 0.3125vw, 1.875rem);
   line-height: 1;
@@ -543,12 +549,6 @@ section {
 
 a:hover .diagonal-arrow {
   transform: rotate(-45deg) translateX(5px);
-}
-
-.project-name p {
-  margin-block: 10px;
-  font-size: 25px;
-  color: var(--gray);
 }
 
 .project-name .nameAt {
@@ -591,10 +591,35 @@ a:hover .diagonal-arrow {
 }
 
 .project-box {
-  border: 1px solid var(--gray);
+  /* border: 1px solid var(--gray); */
   border-radius: 15px;
   padding: 30px;
   margin-block: 30px;
+  position: relative;
+}
+.xp-date {
+  font-size: 1rem;
+  padding: 5px 10px;
+  background-color: var(--primary);
+  color: var(--dark);
+  border-radius: 5px;
+  width: fit-content;
+
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.date-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.date-header hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid var(--gray);
 }
 
 .project-right {

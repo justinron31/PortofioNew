@@ -17,6 +17,10 @@ function ProjectSection() {
                 <div className="project-block">
                   <div className="project-left">
                     <div className="project-name" data-aos="fade-right">
+                      <div className="date-header">
+                        <p className="xp-date">Nov 2023 - Nov 2024</p> <hr />
+                      </div>
+
                       <h1>
                         Software Engineer Intern{" "}
                         <span className="nameAt">@ </span>
@@ -33,7 +37,6 @@ function ProjectSection() {
                           <i className="bx bx-right-arrow-alt diagonal-arrow"></i>
                         </a>
                       </h1>
-                      <p>2023 -2024</p>
                     </div>
                     <div className="project-description" data-aos="fade-right">
                       <p>

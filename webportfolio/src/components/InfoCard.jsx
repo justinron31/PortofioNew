@@ -185,22 +185,24 @@ function InfoCard() {
                 data-aos-offset="500"
                 data-aos-duration="500"
               >
-                Hey there! I’m Justin Ron Galang. You can call me{" "}
-                <span className="highlight-primary">Ron</span>, aspiring{" "}
-                <span className="highlight-primary">software engineer</span> and
-                all-around problem-solver based in <strong>Philippines</strong>.
-                I love creating user-friendly web experiences that make life
-                easier—whether it’s designing sleek interfaces or building
-                systems that just work. When I’m not geeking out over code,
-                you’ll probably catch me searching on how to center a div or{" "}
+                Hey there! I’m Justin Ron Galang—though most people call me{" "}
+                <span className="highlight-primary">Ron</span>. I&apos;m a fresh
+                graduate with a passion for turning ideas into engaging digital
+                experiences. I love building clean, user-friendly web solutions
+                that simplify everyday tasks. I&apos;ve had the chance to work
+                on projects that allowed me to explore how thoughtful design can
+                truly change the way people interact with digital tools. When
+                I&apos;m not coding, you&apos;ll likely find me exploring new
+                ideas or experimenting with{" "}
                 <a
                   href="https://www.behance.net/justingalang1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="behance">designing UI</span>
+                  <span className="behance">UI designs</span>
                 </a>{" "}
-                . Let’s create something awesome together!
+                . I&apos;m excited to keep learning and growing—let&apos;s
+                create something awesome together!
               </p>
             </div>
 
