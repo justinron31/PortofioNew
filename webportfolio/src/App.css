@@ -542,8 +542,8 @@ html {
 
 .project-name {
   font-family: var(--mainfont);
-  font-size: 1.5625rem;
-  font-size: clamp(1.5625rem, 1.5rem + 0.3125vw, 1.875rem);
+  font-size: 1.4rem;
+  font-size: clamp(1.4rem, 1.3675rem + 0.1625000000000001vw, 1.5625rem);
   line-height: 1;
 }
 
@@ -578,7 +578,7 @@ a:hover .diagonal-arrow {
 .project-description {
   line-height: 1.4;
   font-size: 20px;
-  text-align: justify;
+  /* text-align: justify; */
   font-family: var(--mainfont);
   margin-block: 20px;
 }
@@ -873,14 +873,28 @@ a:hover .diagonal-arrow {
   .project-tools {
     justify-content: center;
   }
-  .project-date {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
 
   .project-Mcontent {
     margin: 10px;
+  }
+
+  .project-content {
+    padding: 0;
+  }
+  .project-box {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .project-footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .project-date {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
   }
 }
 

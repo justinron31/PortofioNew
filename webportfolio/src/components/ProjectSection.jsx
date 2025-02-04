@@ -185,6 +185,15 @@ function ProjectSection() {
                     >
                       <i className="bx bxl-figma"></i>
                     </a>
+
+                    <a
+                      href="https://www.figma.com/proto/TtxkXkg6jRUREzsJlg73Hl/Enrollment-UI?page-id=0%3A1&node-id=466-3366&p=f&viewport=1174%2C425%2C0.03&t=T5IQ0vvbVn1zSPtF-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=466%3A3366"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link-button"
+                    >
+                      <i className="bx bx-play"></i>
+                    </a>
                   </div>
                 </div>
               </div>
