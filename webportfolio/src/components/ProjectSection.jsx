@@ -246,6 +246,7 @@ function ProjectSection() {
                 <div className="project-footer">
                   <div className="project-tools" data-aos="fade-right">
                     <div className="tools">React</div>
+                    <div className="tools">Vite</div>
                     <div className="tools">Javascript</div>
                     <div className="tools">Tailwind CSS</div>
                     <div className="tools">Vercel</div>

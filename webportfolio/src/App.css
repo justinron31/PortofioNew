@@ -632,6 +632,7 @@ a:hover .diagonal-arrow {
   /* text-align: justify; */
   font-family: var(--mainfont);
   margin-block: 20px;
+  color: var(--gray);
 }
 
 .project-content {
@@ -702,7 +703,6 @@ a:hover .diagonal-arrow {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
   color: var(--light);
   gap: 10px;
   text-wrap: nowrap;
