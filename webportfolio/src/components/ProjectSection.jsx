@@ -415,11 +415,6 @@ function ProjectSection() {
           </div>
         </div>
       </section>
-
-      {/* <div className="project-header" data-aos="fade-down">
-          <p>What I&apos;ve done so far</p>
-          <h1> Projects.</h1>
-        </div> */}
     </>
   );
 }

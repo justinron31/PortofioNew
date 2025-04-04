@@ -523,13 +523,18 @@ html::before {
 
 /* project section */
 
-.project-section {
+.project-section,
+#projects {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-wrapper {
   border-radius: 15px;
   background-color: var(--dark);
+  max-width: 1300px;
 
   background-image: url("/grain1.jpg");
   background-size: cover;

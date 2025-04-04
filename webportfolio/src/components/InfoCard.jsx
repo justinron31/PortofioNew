@@ -13,7 +13,6 @@ import { AngularDark } from "./icons/AngularDark";
 import { JavascriptDark } from "./icons/JavascriptDark";
 import { TypescriptDark } from "./icons/TypescriptDark";
 import { NodeDark } from "./icons/NodeDark";
-import { PhpDark } from "./icons/PhpDark";
 import { TailwindDark } from "./icons/TailwindDark";
 import { MongodbDark } from "./icons/MongodbDark";
 import { FigmaDark } from "./icons/FigmaDark";
@@ -251,12 +250,6 @@ function InfoCard() {
               <div className="techstack-item">
                 <div className="logo-container">
                   <NodeDark />
-                </div>
-              </div>
-
-              <div className="techstack-item">
-                <div className="logo-container">
-                  <PhpDark />
                 </div>
               </div>
 
