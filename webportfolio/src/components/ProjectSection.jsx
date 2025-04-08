@@ -193,7 +193,15 @@ const experienceData = [
     companyUrl: "https://staclara.com.ph/",
     description:
       "I co-developed BAC Software from scratch using Next.js, React, Mantine UI, and Supabase (PostgreSQL DB) through pair programming, focusing on building core procurement features that established a streamlined workflow foundation. Through thorough pull request reviews on GitHub and continued pair programming sessions, I ensured high code quality for BAC Software while promoting maintainable code practices and knowledge sharing across the team. Additionally, I managed the BAC Software deployment pipeline on Vercel, implementing CI/CD processes that accelerated development cycles and created an efficient feedback loop for internal testing.",
-    tools: ["Next.Js", "Supabase", "Figma"],
+    tools: [
+      "Next.Js",
+      "React",
+      "HTML/CSS",
+      "Mantine UI",
+      "Supabase",
+      "PostgreSQL",
+      "Figma",
+    ],
   },
   {
     id: 1,
