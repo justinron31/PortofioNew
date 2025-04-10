@@ -185,14 +185,14 @@ function InfoCard() {
                 data-aos-duration="500"
               >
                 Hey there! I’m Justin Ron Galang—though most people call me{" "}
-                <span className="highlight-primary">Ron</span>. I&apos;m a fresh
-                graduate with a passion for turning ideas into engaging digital
-                experiences. I love building clean, user-friendly web solutions
-                that simplify everyday tasks. I&apos;ve had the chance to work
-                on projects that allowed me to explore how thoughtful design can
-                truly change the way people interact with digital tools. When
-                I&apos;m not coding, you&apos;ll likely find me exploring new
-                ideas or experimenting with{" "}
+                <span className="highlight-primary">Ron</span>. I&apos;m a{" "}
+                <span className="font-semibold">Web Developer</span> with a
+                passion for turning ideas into engaging digital experiences. I
+                love building clean, user-friendly web solutions that simplify
+                everyday tasks. Through my projects, I&apos;ve explored how
+                thoughtful design can truly change the way people interact with
+                digital tools. When I&apos;m not coding, you&apos;ll likely find
+                me exploring new ideas or experimenting with{" "}
                 <a
                   href="https://www.behance.net/justingalang1"
                   target="_blank"

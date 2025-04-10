@@ -196,7 +196,7 @@ const experienceData = [
     tools: [
       "Next.Js",
       "React",
-      "HTML/CSS",
+      "Typescript",
       "Mantine UI",
       "Supabase",
       "PostgreSQL",
@@ -269,6 +269,25 @@ const sideProjectsData = [
   {
     id: 1,
     date: "Feb 2025",
+    title: "Pitik - Photobooth",
+    role: "Web Developer",
+    description:
+      "Developed Pitik, a fully client-side virtual photobooth application built using Next.js 15 and TypeScript. This project allows users to capture photos directly through their browser by integrating the getUserMedia API (WebRTC) and apply various frames and customizations using the HTML Canvas API for client-side image manipulation. Emphasizing user privacy, the application processes all images locally without requiring sign-up or server-side storage, enabling instant photo downloads. The responsive and intuitive user interface was styled efficiently using Tailwind CSS.",
+    tools: ["React", "Next.Js", "Typescript", "Tailwind CSS", "Vercel"],
+    links: [
+      {
+        icon: "bx bxl-github",
+        url: "https://github.com/justinron31/Pitik---Photobooth",
+      },
+      {
+        icon: "bx bx-play",
+        url: "https://pitikbooth.vercel.app/",
+      },
+    ],
+  },
+  {
+    id: 2,
+    date: "Feb 2025",
     title: "PassPalette Gen",
     role: "Web Developer",
     description:
@@ -277,7 +296,7 @@ const sideProjectsData = [
     links: [
       {
         icon: "bx bxl-github",
-        url: "https://github.com/justinron31/PasswordGen/tree/main",
+        url: "https://github.com/justinron31/PasswordGen",
       },
       {
         icon: "bx bx-play",
@@ -286,7 +305,7 @@ const sideProjectsData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     date: "Sep 2024",
     title: "WIKHAIN - Mobile Application",
     role: "Freelance - UI/UX Desginer",
@@ -345,7 +364,7 @@ function ProjectSection() {
           <div className="project-container">
             <div className="project-content">
               <div className="project-date" data-aos="fade-right">
-                <h1>Experience</h1>
+                <h1>Work Experience</h1>
               </div>
               {experienceData.map((experience) => (
                 <ExperienceItem key={experience.id} experience={experience} />
